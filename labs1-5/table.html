@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа 4</title>
+  <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="link-wrapper">
+        <a href="index.html" class="header__link">Основная страница</a>
+        <a href="page2.html" class="header__link">Позиционирование элементов</a>
+        <a href="#" class="header__link">Таблица</a>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="main-wrapper">
+      <h1 class="main__title title">Таблица студентов</h1>
+      <div class="table-wrapper">
+        <table class="student-table">
+          <caption>Информация о студентах</caption>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>ФИ</th>
+              <th>Номер зачётной книжки</th>
+              <th>Номер группы</th>
+              <th>Пол</th>
+              <th>Возраст</th>
+              <th>Форма поступления</th>
+              <th>Направление</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Гослинг Райан</td>
+              <td>12345</td>
+              <td>1-01</td>
+              <td>Мужской</td>
+              <td>43</td>
+              <td>Очная</td>
+              <td>ФИИТ</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Джилленхол Джейк</td>
+              <td>67890</td>
+              <td>1-02</td>
+              <td>Мужской</td>
+              <td>43</td>
+              <td>Очная</td>
+              <td>ИБАС</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Нортон Эдвард</td>
+              <td>11223</td>
+              <td>1-03</td>
+              <td>Мужской</td>
+              <td>55</td>
+              <td>Очная</td>
+              <td>ИВТ</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Питт Брэд</td>
+              <td>44556</td>
+              <td>1-04</td>
+              <td>Мужской</td>
+              <td>60</td>
+              <td>Заочная</td>
+              <td>ФИИТ</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ДиКаприо Леонардо</td>
+              <td>78901</td>
+              <td>1-05</td>
+              <td>Мужской</td>
+              <td>49</td>
+              <td>Очная</td>
+              <td>ИБАС</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="form-wrapper">
+          <h2 class="title">Добавить нового студента</h2>
+          <form class="form">
+            <div class="form-item">
+              <label for="id" class="form-label">ID:</label>
+              <input type="number" id="id" name="id" required class="form-input">
+            </div>
+        
+            <div class="form-item">
+              <label for="fio" class="form-label">ФИО:</label>
+              <input type="text" id="fio" name="fio" required class="form-input">
+            </div>
+        
+            <div class="form-item">
+              <label for="zachot" class="form-label">Номер зачётной книжки:</label>
+              <input type="text" id="zachot" name="zachot" required class="form-input">
+            </div>
+        
+            <div class="form-item">
+              <label for="group" class="form-label">Номер группы:</label>
+              <input type="text" id="group" name="group" required class="form-input">
+            </div>
+        
+            <div class="form-item">
+              <label for="gender" class="form-label">Пол:</label>
+              <select id="gender" name="gender" required class="form-select">
+                <option value="Мужской">Мужской</option>
+                <option value="Женский">Женский</option>
+              </select>
+            </div>
+        
+            <div class="form-item">
+              <label for="age" class="form-label">Возраст:</label>
+              <input type="number" id="age" name="age" required class="form-input">
+            </div>
+        
+            <div class="form-item">
+              <label for="form" class="form-label">Форма поступления:</label>
+              <select id="form" name="form" required class="form-select">
+                <option value="Очная">Очная</option>
+                <option value="Заочная">Заочная</option>
+              </select>
+            </div>
+        
+            <div class="form-item">
+              <label for="direction" class="form-label">Направление:</label>
+              <select id="direction" name="direction" required class="form-select">
+                <option value="ФИИТ">ФИИТ</option>
+                <option value="ИБАС">ИБАС</option>
+                <option value="ИВТ">ИВТ</option>
+              </select>
+            </div>
+        
+            <button type="submit" class="form-button">Добавить</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>

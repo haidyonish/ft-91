@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Информация о Джейке Джилленхоле</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container main-wrapper">
+    <div class="row">
+      <div class="col">
+        <nav class="navbar bg-body-tertiary px-3 mb-3 ">
+          <a class="navbar-brand" href="#">Джейк Джилленхол</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#scrollspyHeading1">Информация</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="films.html">Фильмы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <div id="list-example" class="list-group sticky-top">
+          <a class="list-group-item list-group-item-action" href="#list-item-1">Фотографии актёра</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-2">Популярные фильмы</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-3">Информация об актёре</a>
+        </div>
+      </div>
+      <div class="col-10">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+          <h2 id="list-item-1">Фотографии актёра</h4>
+          <div id="carouselExampleIndicators" class="carousel slide main__item" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/jpg/actor1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/jpg/actor2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/jpg/actor3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <h2 id="list-item-2">Популярные фильмы</h4>
+          <div class="column main__item">
+            <div class="row">
+              <div class="col ">
+                <div class="card" style="width: 18rem; margin: 0 auto;">
+                  <img src="img/jpg/poster1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Левша</h5>
+                    <p class="card-text">Боксер пытается вернуть смысл жизни после смерти жены. Джейк Джилленхол в драме режиссера «Тренировочного дня»</p>
+                    <a href="https://www.kinopoisk.ru/film/573990/" class="btn btn-primary">Перейти к фильму</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem; margin: 0 auto;">
+                  <img src="img/jpg/poster2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Разрушение</h5>
+                    <p class="card-text">Боксер пытается вернуть смысл жизни после смерти жены. Джейк Джилленхол в драме режиссера «Тренировочного дня»</p>
+                    <a href="https://www.kinopoisk.ru/film/573990/" class="btn btn-primary">Перейти к фильму</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem; margin: 0 auto;">
+                  <img src="img/jpg/poster1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Дом у дороги</h5>
+                    <p class="card-text">Бывший боец UFC Элвуд Далтон переживает не лучшие времена. Он живёт в машине и зарабатывает участием в подпольных боях без правил.</p>
+                    <a href="https://www.kinopoisk.ru/film/817167/" class="btn btn-primary">Перейти к фильму</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 id="list-item-3">Информация об актёре</h4>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Открыть
+            </a>
+          </p>
+          <div class="collapse main__item" id="collapseExample">
+            <div class="card card-body">
+              <p>Джейк Джилленхол — американский актёр и кинопродюсер. Родился 19 декабря 1980 года в Лос-Анджелесе, Калифорния.</p>
+              <p>С раннего детства был связан с миром кино, начал сниматься уже в 11 лет. Свою первую роль он сыграл в фильме «Городские пижоны» (1991).</p>
+              <p>Мирового признания актёр добился в 1999 году, когда на экраны вышла биографическая драма «Октябрьское небо», где он исполнил свою первую главную роль — подростка Хомера Хикэма. Также он исполнил главную роль в картине «Донни Дарко».</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
