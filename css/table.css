@@ -191,4 +191,40 @@ body {
   border-radius: 15px;
 }
 
+.form-wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-item {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  background: #014E56;
+  border-radius: 15px;
+  box-sizing: content-box;
+  padding: 3px 5px;
+  width: 100%;
+}
+
+.form-select {
+  background: #014E56;
+  border-radius: 15px;
+  box-sizing: content-box;
+  padding: 3px 5px;
+  width: 100%;
+  appearance: auto;
+}
+
+.form-button {
+  background: #014E56;
+  border-radius: 15px;
+  padding: 5px 20px;
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+}
+
 /* Styles end */
